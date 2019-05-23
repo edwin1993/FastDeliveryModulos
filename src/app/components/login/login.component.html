@@ -1,0 +1,23 @@
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+        <img src="https://00e9e64bac02d6310db15e66bc439284b0fa4c0903a7ee45e6-apidata.googleusercontent.com/download/storage/v1/b/fast-delivery/o/fast_delivery_logo.png?qk=AD5uMEvHBu51FOoVM2bdZRBwAJRaCTVd4l-BMRe9L9xJfrDsreAIgE9sPaxb9Y1gdZZFMba1k6I9wu0h8VzDuuT4DDfISdoNpJkV2QHQIPIwBHCfRLHhwbqdOXKXRp170DwHha0p9Q_bzLaB2FLbxPXa3tg1V9Zg_AWtdwPUsWxnujIl_XWA_SY_R7zZj1PtSd6KIIreub4avvBxyytjkrJg6DkoPqankzksw2V3gNwRcJT_MiSx37VWAciT3Fh2KuHNruV9HtVPETnMWMV_SvtqBHapKDFO1iN9UHdz0Z2oFPho5NXa3LANDBo0fvMY4eSQSV63XV4WvezgOh_BGy0GdV1MO__5ejFZGrMjZyUMOMaZN98Gfc-2Sf31PWyCzYovse5OK1CoW0DSxrku61rWroeWvBXSiJHxOIEWYeBe_tJ0sr4Kx0WQj5qtorXnUbSu7XvXk-afOYyHrX-8eHAWCfaRdcemb_9fivmjHGBUvdHVaKRG4Wy9kZHAWpNkzoSWSTVsXJr6jKyhQx06huwgKDoyxcLXuXblPBaLimNsW13yBq0l_uAM3NddKVRBad7_GDgOFcZCwKscvpxs31wQECtUgVm1-Y9zIgNEOYdwDYLEwtAQbpMSrDMwfZ_Y3vZLRhEObq9JFkOdHrVVeVE64gi0p6-FZpKuaEdKFKCVlc9vGmv54xws5vm0rfbJZkLuOCHIryRsUFLd2m27QA5doP30oLQ-Dk2QxbxMWmtivyMXBN-erEPdNKzOb4rpi680B13U3SNlXCAcI5s1iG4W6LKPFS8bAQ" id="icon" alt="User Icon" />
+      </div>
+  
+      <!-- Login Form -->
+      <form [formGroup]="forma" (ngSubmit)="getAccess()">
+        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login" formControlName="login">
+        <input type="password" id="password" class="fadeIn third" name="login" placeholder="password" formControlName="password">
+        <input type="submit" class="fadeIn fourth" value="Log In" > 
+      </form>
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" [routerLink]="['home', 'none']">Forgot Password?</a>
+      </div>
+  
+    </div>
+  </div>
